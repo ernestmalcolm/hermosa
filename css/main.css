@@ -85,6 +85,20 @@ body {
   vertical-align: middle;
   margin-left: 0;
   text-align: center;
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 12px #c41e3a, 0 0 50px #c41e3a, 0 0 100px #c41e3a;
+  }
+  10%,
+  70% {
+    color: #111;
+    text-shadow: none;
+  }
 }
 
 .back-arrow {
